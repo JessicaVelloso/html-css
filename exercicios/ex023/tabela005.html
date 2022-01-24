@@ -5,9 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio de Tabelas</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th, td{
+            border: 1px solid black;
+            text-align: left;
+            padding: 10px;
+        }
+        .cnome{
+            background-color: cadetblue;
+        }
+        .cgrupo{
+            background-color: coral;
+        }
+    </style>
 </head>
 <body>
-    <h1>Exercicio de Tabelas
-    </h1>
+    <h1>Exercicio de Tabelas</h1>
+    <table>
+        <colgroup>
+        <col class="cnome">
+        <col class="cgrupo" span="2">
+        <col class="cprof">
+
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>40</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>20</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>M</td>
+            <td>27</td>
+            <td>Jornalista</td>
+        </tr>
+    </table>
 </body>
 </html>
